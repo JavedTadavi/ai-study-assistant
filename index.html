@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Study Assistant</title>
+  <style>
+    body {
+      font-family: Arial;
+      background: #f4f6f8;
+      padding: 40px;
+      text-align: center;
+    }
+    textarea {
+      width: 90%;
+      height: 120px;
+      margin-top: 20px;
+    }
+    button {
+      margin-top: 15px;
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+    .output {
+      background: white;
+      padding: 20px;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>AI Study Assistant</h1>
+  <p>Generate structured, exam-ready study content using smart prompts.</p>
+
+  <textarea placeholder="Enter any topic or question..."></textarea><br>
+  <button onclick="generate()">Generate</button>
+
+  <div class="output" id="result"></div>
+
+  <script>
+    function generate() {
+      document.getElementById("result").innerHTML =
+      "<h3>Generated Output</h3>" +
+      "<b>Definition:</b> Clear and simple explanation of the topic.<br><br>" +
+      "<b>Key Points:</b><ul><li>Important concept 1</li><li>Important concept 2</li></ul>" +
+      "<b>Exam Answer:</b> This topic can be explained in a structured manner suitable for 7–8 mark answers.";
+    }
+  </script>
+
+</body>
+</html>
+
